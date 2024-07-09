@@ -1,0 +1,56 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App input {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.App p {
+  margin-top: 20px;
+}
+
+.mode {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .App-header {
+  background-color: #f0f0f0;
+}
+
+/* Night mode styles */
+.night-mode {
+  background-color: black;
+  color: white;
+}
+
+.night-mode .App-header {
+  background-color: #333;
+}
+
+.night-mode input {
+  background-color: #555;
+  color: white;
+}
+
+.night-mode .namebttn, .night-mode .mode {
+  background-color: #555;
+  color: white;
+}
