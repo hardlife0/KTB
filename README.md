@@ -45,6 +45,28 @@
     </code></pre>
 
     ### Prettier
-   [설치 & 세팅]
+   1. 설치 & 세팅
      * Code - Preference - Extentions 에서 Prettier 검색 후 Install를 눌러서 설치한다.
-     * 프로젝트의 root directory에 .prettier.json/ .prettier.js 파일 둘 중 하나를 생성한다.
+     * VS code 설정에 들어가 'Default Formatter'를 검색하고, '없음'에서 'Prettier - Code formatter'로 변경한다.
+     * 프로젝트의 root directory에 .prettier.json/ .prettier.js 파일 둘 중 하나를 생성하여 아래 코드를 작성한다.
+     <pre><code>
+      arrowParens: 'always'
+      bracketSpacing: true
+      jsxBracketSameLine: false
+      jsxSingleQuote: false
+      printWidth: 80
+      proseWrap: 'always'
+      quoteProps: 'as-needed'
+      semi: true
+      singleQuote: true
+      tabWidth: 2
+      trailingComma: 'es5'
+      useTabs: false
+    </code></pre>
+    * Airbnb 코딩 규칙을 적용할 코드를 열고 F1를 누른 뒤, 'Format Document'를 입력하고 실행한다.
+    * 더 간편하게 사용하기 위해, Ctrl + ,를 눌러 설정에 들어가서 'Format on Save' 를 검색하고 설정을 한다.
+    
+      -> 저장할 때 자동으로 Airbnb 코딩 규칙으로 변환되어 저장된다.
+
+  ### 참고링크 
+  (https://kyuhyuk.kr/article/javascript/2021/05/13/ESLint-Prettier-Airbnb-Javascript-Style-Setting)
